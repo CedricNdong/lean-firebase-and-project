@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.ocr.firebaseoc.MainActivity"
+        <activity android:name="com.ocr.firebaseoc.ui.MainActivity"
             android:theme="@style/AppTheme.NoTitle"> <!-- DISABLE TOOLBAR IN MAIN ACTIVITY-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,6 +17,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- PROFILE ACTIVITY -->
+        <activity android:name=".ui.ProfileActivity"
+                  android:label="@string/toolbar_title_login_activity"
+                  android:parentActivityName=".ui.MainActivity"/>
     </application>
 
 </manifest>
